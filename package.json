@@ -1,0 +1,23 @@
+{
+  "name": "@takcast/imagemixer",
+  "version": "0.0.1",
+  "description": "mix image with three.js",
+  "main": "index.js",
+  "scripts": {
+    "tsbuild": "tsc --project ."
+  },
+  "author": "taktod",
+  "license": "BSD-3-Clause",
+  "devDependencies": {
+    "@types/node": "^7.0.22",
+    "@types/react": "^15.0.25",
+    "@types/react-bootstrap": "0.0.49",
+    "@types/react-dom": "^15.5.0",
+    "@types/three": "^0.84.8",
+    "takcast.interface": "github:taktod/takcast.interface",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "three": "^0.85.2"
+  }
+}
