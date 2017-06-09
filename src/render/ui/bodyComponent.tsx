@@ -31,15 +31,17 @@ export var bodyComponent = (def:Default):any => {
       this._keyDown = this._keyDown.bind(this);
     }
     public _keyDown(event:KeyboardEvent) {
-      switch(event.code) {
-      case "KeyS":
-        this._changeMode(scale);
-        break;
-      case "KeyR":
-        this._changeMode(rotate);
-        break;
-      default:
-        break;
+      if(event.target == document.body) {
+        switch(event.code) {
+        case "KeyS":
+          this._changeMode(scale);
+          break;
+        case "KeyR":
+          this._changeMode(rotate);
+          break;
+        default:
+          break;
+        }
       }
     }
     public _mouseMove(event:MouseEvent) {
