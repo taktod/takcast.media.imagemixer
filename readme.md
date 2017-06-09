@@ -23,7 +23,7 @@ three.jsで2D描画させます。
 takcastのプロジェクトで
 
 ```
-$ npm install taktod/takcast.media.imagemixer
+$ npm install taktod/takcast.media.imagemixer --save
 $ npm run setup
 ```
 
