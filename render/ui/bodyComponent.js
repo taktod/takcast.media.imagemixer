@@ -37,15 +37,17 @@ exports.bodyComponent = function (def) {
             return _this;
         }
         BodyComponent.prototype._keyDown = function (event) {
-            switch (event.code) {
-                case "KeyS":
-                    this._changeMode(scale);
-                    break;
-                case "KeyR":
-                    this._changeMode(rotate);
-                    break;
-                default:
-                    break;
+            if (event.target == document.body) {
+                switch (event.code) {
+                    case "KeyS":
+                        this._changeMode(scale);
+                        break;
+                    case "KeyR":
+                        this._changeMode(rotate);
+                        break;
+                    default:
+                        break;
+                }
             }
         };
         BodyComponent.prototype._mouseMove = function (event) {
